@@ -9,5 +9,6 @@
     <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
     <property name="hibernate.show_sql">true</property>
     <mapping class="model.UsuarioModel"/>
+    <mapping class="model.FormaPagtoModel"/>
   </session-factory>
 </hibernate-configuration>

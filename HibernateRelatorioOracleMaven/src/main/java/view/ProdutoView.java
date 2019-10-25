@@ -434,7 +434,7 @@ public class ProdutoView extends javax.swing.JFrame {
 
     private void btnPRIMEIROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPRIMEIROActionPerformed
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Produtos Cadastrados !");
         } else {
             int selecionado = 0;
             tblConsulta.changeSelection(selecionado, 0, false, false);
@@ -449,7 +449,7 @@ public class ProdutoView extends javax.swing.JFrame {
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
         String mensagem;
-        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Produto ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             ProdutoModel produtomodel = new ProdutoModel();
@@ -461,7 +461,7 @@ public class ProdutoView extends javax.swing.JFrame {
                 produtocontroller.gravar(produtomodel, getOperacao());
                 mensagem = "Dados Gravados com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Gravação do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Gravação do Produto \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -527,7 +527,7 @@ public class ProdutoView extends javax.swing.JFrame {
         array = null;
         array = produtocontroller.consultar(condicao);
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Produtos Cadastrados !");
         } else {
             mtb = new ProdutoTableModel(array);
             tblConsulta.setModel(mtb);
@@ -564,7 +564,7 @@ public class ProdutoView extends javax.swing.JFrame {
     private void btnEXCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEXCLUIRActionPerformed
         String mensagem;
         setOperacao("");
-        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Produto ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             ProdutoModel produtomodel = new ProdutoModel();
@@ -573,9 +573,9 @@ public class ProdutoView extends javax.swing.JFrame {
 
             try {
                 produtocontroller.excluir(produtomodel);
-                mensagem = "Usuário Excluído com Sucesso";
+                mensagem = "Produto Excluído com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Exclusão do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Exclusão do Produto \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -589,7 +589,7 @@ public class ProdutoView extends javax.swing.JFrame {
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = produtocontroller.imprimir();
         if (retorno != null) {
-            JOptionPane.showMessageDialog(null, "Erro no Relatório de Usuários /n" + retorno.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro no Relatório de Produtos /n" + retorno.getMessage());
         }
     }//GEN-LAST:event_btnIMPRIMIRActionPerformed
 

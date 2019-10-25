@@ -434,7 +434,7 @@ public class FornecedorView extends javax.swing.JFrame {
 
     private void btnPRIMEIROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPRIMEIROActionPerformed
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Fornecedores Cadastrados !");
         } else {
             int selecionado = 0;
             tblConsulta.changeSelection(selecionado, 0, false, false);
@@ -449,7 +449,7 @@ public class FornecedorView extends javax.swing.JFrame {
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
         String mensagem;
-        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Fornecedor ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             ClienteModel clientemodel = new ClienteModel();
@@ -459,7 +459,7 @@ public class FornecedorView extends javax.swing.JFrame {
                 clientecontroller.gravar(clientemodel, getOperacao());
                 mensagem = "Dados Gravados com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Gravação do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Gravação do Fornecedor \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -523,7 +523,7 @@ public class FornecedorView extends javax.swing.JFrame {
         array = null;
         array = clientecontroller.consultar(condicao);
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Fornecedores Cadastrados !");
         } else {
             mtb = new ClienteTableModel(array);
             tblConsulta.setModel(mtb);
@@ -560,16 +560,16 @@ public class FornecedorView extends javax.swing.JFrame {
     private void btnEXCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEXCLUIRActionPerformed
         String mensagem;
         setOperacao("");
-        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Fornecedor ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             ClienteModel clientemodel = new ClienteModel();
 
             try {
                 clientecontroller.excluir(clientemodel);
-                mensagem = "Usuário Excluído com Sucesso";
+                mensagem = "Fornecedor Excluído com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Exclusão do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Exclusão do Fornecedor \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -583,7 +583,7 @@ public class FornecedorView extends javax.swing.JFrame {
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = clientecontroller.imprimir();
         if (retorno != null) {
-            JOptionPane.showMessageDialog(null, "Erro no Relatório de Usuários /n" + retorno.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro no Relatório de Fornecedores /n" + retorno.getMessage());
         }
     }//GEN-LAST:event_btnIMPRIMIRActionPerformed
 
