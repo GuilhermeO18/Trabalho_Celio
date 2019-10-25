@@ -12,16 +12,16 @@ import javax.persistence.Table;
 public class UsuarioModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "USU_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "USU_CODIGO", nullable = true, precision = 10, scale = 0)
     private int USU_CODIGO;
 
-    @Column(name = "USU_NOME", nullable = false, length = 30)
+    @Column(name = "USU_NOME", nullable = true, length = 30)
     private String USU_NOME;
 
     @Column(name = "USU_LOGIN", nullable = false, length = 10)
     private String USU_LOGIN;
 
-    @Column(name = "USU_SENHA", nullable = false, length = 10)
+    @Column(name = "USU_SENHA", nullable = true, length = 10)
     private String USU_SENHA;
 
     @Column(name = "USU_ATIVO", precision = 1)

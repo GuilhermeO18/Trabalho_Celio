@@ -4,11 +4,8 @@ import view.ClienteView;
 import view.UsuarioView;
 import view.VendaView;
 import view.CompraView;
-import view.CompraProdutoView;
 import view.FornecedorView;
-import view.PessoaView;
-import view.VendaPagtoView;
-import view.VendaProdutoView;
+//import view.PessoaView;
 import view.ProdutoView;
 import view.FormaPagtoView;
 
@@ -174,7 +171,7 @@ public class FormMenu extends javax.swing.JFrame {
 
     private void miFormaPagtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miFormaPagtoActionPerformed
         FormaPagtoView objfpg = null;
-        objfpg = new VendaView();
+        objfpg = new FormaPagtoView();
         objfpg.setVisible(true);
     }//GEN-LAST:event_miFormaPagtoActionPerformed
 

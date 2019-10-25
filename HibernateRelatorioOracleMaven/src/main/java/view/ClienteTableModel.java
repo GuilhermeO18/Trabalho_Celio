@@ -36,7 +36,7 @@ public class ClienteTableModel extends AbstractTableModel {
         ClienteModel cliente = (ClienteModel) linhas.get(row);
         switch (col) {
             case 0:
-                return cliente.getCLI_CODIGO();           
+                return cliente.getCLI_CODIGO();              
             default:
                 return null;
         }

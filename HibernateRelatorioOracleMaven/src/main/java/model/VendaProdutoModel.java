@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class VendaProdutoModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "VEP_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "VEP_CODIGO", nullable = true, precision = 10, scale = 0)
     private int VEP_CODIGO;
 
     public VendaModel getVENDA() {
@@ -66,16 +66,16 @@ public class VendaProdutoModel implements java.io.Serializable {
     private VendaModel VENDA;
     private ProdutoModel PRODUTO;
 
-    @Column(name = "VEP_QTDE", nullable = false, precision = 18, scale = 4)
+    @Column(name = "VEP_QTDE", nullable = true, precision = 18, scale = 4)
     private double VEP_QTDE;
 
-    @Column(name = "VEP_PRECO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VEP_PRECO", nullable = true, precision = 18, scale = 2)
     private double VEP_PRECO;
 
-    @Column(name = "VEP_DESCONTO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VEP_DESCONTO", nullable = true, precision = 18, scale = 2)
     private double VEP_DESCONTO;
 
-    @Column(name = "VEP_TOTAL", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VEP_TOTAL", nullable = true, precision = 18, scale = 2)
     private double VEP_TOTAL;
 
     @Override

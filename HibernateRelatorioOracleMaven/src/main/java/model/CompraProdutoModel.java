@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class CompraProdutoModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "CPP_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "CPP_CODIGO", nullable = true, precision = 10, scale = 0)
     private int CPP_CODIGO;
 
     public CompraModel getCOMPRA() {
@@ -72,10 +72,10 @@ public class CompraProdutoModel implements java.io.Serializable {
     @Column(name = "CPR_PRECO", nullable = false, precision = 18, scale = 2)
     private double CPR_PRECO;
 
-    @Column(name = "CPR_DESCONTO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "CPR_DESCONTO", nullable = true, precision = 18, scale = 2)
     private double CPR_DESCONTO;
 
-    @Column(name = "CPR_TOTAL", nullable = false, precision = 18, scale = 2)
+    @Column(name = "CPR_TOTAL", nullable = true, precision = 18, scale = 2)
     private double CPR_TOTAL;
 
     @Override

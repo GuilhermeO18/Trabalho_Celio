@@ -1,61 +1,70 @@
 package model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "CLIENTE")
-public class ClienteModel implements java.io.Serializable {
+public class ClienteModel {
 
     @Id
-    @Column(name = "CLI_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "CLI_CODIGO", nullable = true, precision = 10, scale = 0)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_Sequence")
+    @SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_CLIENTE")
     private int CLI_CODIGO;
 
-    public PessoaModel getPESSOA() {
-        return PESSOA;
-    }
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    @JoinColumn(name = "PES_CODIGO", unique = true, nullable = false)
+    private PessoaModel pessoa;
 
-    public void setPESSOA(PessoaModel PESSOA) {
-        this.PESSOA = PESSOA;
-    }
-
-    public double getCLI_LIMITECRED() {
-        return CLI_LIMITECRED;
-    }
-
-    public void setCLI_LIMITECRED(double CLI_LIMITECRED) {
-        this.CLI_LIMITECRED = CLI_LIMITECRED;
-    }
-    
-    private PessoaModel PESSOA;
-
-    @Column(name = "CLI_CODIGO", nullable = false, precision = 18, scale = 2)
-    private double CLI_LIMITECRED;
-    
-    @Override
-    public String toString() {
-        return "";
-    }
+    @Column(name = "CLI_LIMITECRED", precision = 18, scale = 2)
+    private Double CLI_LIMITECRED;
 
     public ClienteModel() {
+        super();
     }
 
-    public ClienteModel(int CLI_CODIGO, PessoaModel PESSOA, double CLI_LIMITECRED) {
-        this.CLI_CODIGO = CLI_CODIGO;
-        this.PESSOA = PESSOA;
-        this.CLI_LIMITECRED = CLI_LIMITECRED;
+    public ClienteModel(int cLI_CODIGO, Double cLI_LIMITECRED) {
+        super();
+        CLI_CODIGO = cLI_CODIGO;
+        CLI_LIMITECRED = cLI_LIMITECRED;
     }
 
     public int getCLI_CODIGO() {
-        return this.CLI_CODIGO;
+        return CLI_CODIGO;
     }
 
-    public void setCLI_CODIGO(int CLI_CODIGO) {
-        this.CLI_CODIGO = CLI_CODIGO;
+    public void setCLI_CODIGO(int cLI_CODIGO) {
+        CLI_CODIGO = cLI_CODIGO;
     }
 
+    public PessoaModel getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(PessoaModel pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public Double getCLI_LIMITECRED() {
+        return CLI_LIMITECRED;
+    }
+
+    public void setCLI_LIMITECRED(Double cLI_LIMITECRED) {
+        CLI_LIMITECRED = cLI_LIMITECRED;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return pessoa.getPES_NOME();
+    }
 }

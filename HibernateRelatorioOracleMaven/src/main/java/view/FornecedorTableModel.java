@@ -36,7 +36,7 @@ public class FornecedorTableModel extends AbstractTableModel {
         FornecedorModel fornecedor = (FornecedorModel) linhas.get(row);
         switch (col) {
             case 0:
-                return fornecedor.getFOR_CODIGO();             
+                return fornecedor.getFOR_CODIGO();            
             default:
                 return null;
         }

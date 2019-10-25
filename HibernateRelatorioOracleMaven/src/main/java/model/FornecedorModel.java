@@ -1,61 +1,60 @@
 package model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "FORNECEDOR")
-public class FornecedorModel implements java.io.Serializable {
+public class FornecedorModel {
 
     @Id
-    @Column(name = "FOR_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "FOR_CODIGO", nullable = true, precision = 10, scale = 0)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_Sequence")
+    @SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_FORNECEDOR")
     private int FOR_CODIGO;
-
-    @Column(name = "FOR_CONTATO", nullable = false, length = 80)
     private String FOR_CONTATO;
 
-    private PessoaModel PESSOA;
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    @JoinColumn(name = "PES_CODIGO", unique = true, nullable = false)
+    private PessoaModel pessoa;
 
-    public PessoaModel getPESSOA() {
-        return PESSOA;
+    public FornecedorModel() {
+        super();
     }
 
-    public void setPESSOA(PessoaModel PESSOA) {
-        this.PESSOA = PESSOA;
+    public FornecedorModel(int fOR_CODIGO, String fOR_CONTATO) {
+        super();
+        FOR_CODIGO = fOR_CODIGO;
+        FOR_CONTATO = fOR_CONTATO;
+    }
+
+    public int getFOR_CODIGO() {
+        return FOR_CODIGO;
+    }
+
+    public void setFOR_CODIGO(int fOR_CODIGO) {
+        FOR_CODIGO = fOR_CODIGO;
+    }
+
+    public PessoaModel getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(PessoaModel pessoa) {
+        this.pessoa = pessoa;
     }
 
     @Override
     public String toString() {
-        return this.FOR_CONTATO;
+        // TODO Auto-generated method stub
+        return pessoa.getPES_NOME();
     }
-
-    public FornecedorModel() {
-    }
-
-    public FornecedorModel(int FOR_CODIGO, String FOR_CONTATO, PessoaModel PESSOA) {
-        this.FOR_CODIGO = FOR_CODIGO;
-        this.FOR_CONTATO = FOR_CONTATO;
-        this.PESSOA = PESSOA;
-    }
-
-    public int getFOR_CODIGO() {
-        return this.FOR_CODIGO;
-    }
-
-    public void setFOR_CODIGO(int FOR_CODIGO) {
-        this.FOR_CODIGO = FOR_CODIGO;
-    }
-
-    public String getFOR_CONTATO() {
-        return this.FOR_CONTATO;
-    }
-
-    public void setFOR_CONTATO(String FOR_CONTATO) {
-        this.FOR_CONTATO = FOR_CONTATO;
-    }
-
 }

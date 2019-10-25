@@ -1,7 +1,7 @@
 package view;
 
-import controller.FornecedorController;
-import controller.FornecedorController;
+import controller.ClienteController;
+import controller.ClienteController;
 import java.awt.Dimension;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -9,14 +9,14 @@ import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import model.FornecedorModel;
+import model.ClienteModel;
 
 public class FornecedorView extends javax.swing.JFrame {
 
     private String operacao;
-    private ArrayList<FornecedorModel> array;
-    private FornecedorTableModel mtb;
-    private FornecedorController clientecontroller;
+    private ArrayList<ClienteModel> array;
+    private ClienteTableModel mtb;
+    private ClienteController clientecontroller;
 
     private String getOperacao() {
         return operacao;
@@ -31,7 +31,7 @@ public class FornecedorView extends javax.swing.JFrame {
     }
 
     public FornecedorView() {
-        clientecontroller = new FornecedorController();
+        clientecontroller = new ClienteController();
         this.setPreferredSize(new Dimension(750, 650));
 
         initComponents();
@@ -79,8 +79,9 @@ public class FornecedorView extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         lblUSU_NOME = new javax.swing.JLabel();
-        edtFOR_NOME = new javax.swing.JTextField();
-        edtFOR_CODIGO = new javax.swing.JTextField();
+        edtCLI_NOME = new javax.swing.JTextField();
+        chkCLI_ATIVO = new javax.swing.JCheckBox();
+        edtCLI_CODIGO = new javax.swing.JTextField();
         lblUSU_LOGIN1 = new javax.swing.JLabel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
@@ -253,25 +254,33 @@ public class FornecedorView extends javax.swing.JFrame {
 
         lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitulo.setText("Cadastro de Clientes");
+        lblTitulo.setText("Cadastro de Fornecedores");
         getContentPane().add(lblTitulo);
         lblTitulo.setBounds(60, 80, 590, 29);
 
         lblUSU_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblUSU_NOME.setText("Nome");
 
-        edtFOR_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        edtFOR_NOME.addActionListener(new java.awt.event.ActionListener() {
+        edtCLI_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtCLI_NOME.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                edtFOR_NOMEActionPerformed(evt);
+                edtCLI_NOMEActionPerformed(evt);
             }
         });
 
-        edtFOR_CODIGO.setEditable(false);
-        edtFOR_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        edtFOR_CODIGO.addActionListener(new java.awt.event.ActionListener() {
+        chkCLI_ATIVO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        chkCLI_ATIVO.setText("ATIVO?");
+        chkCLI_ATIVO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                edtFOR_CODIGOActionPerformed(evt);
+                chkCLI_ATIVOActionPerformed(evt);
+            }
+        });
+
+        edtCLI_CODIGO.setEditable(false);
+        edtCLI_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtCLI_CODIGO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtCLI_CODIGOActionPerformed(evt);
             }
         });
 
@@ -289,8 +298,10 @@ public class FornecedorView extends javax.swing.JFrame {
                     .addComponent(lblUSU_LOGIN1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(edtFOR_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edtFOR_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(chkCLI_ATIVO, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -299,15 +310,16 @@ public class FornecedorView extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUSU_LOGIN1)
-                    .addComponent(edtFOR_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUSU_NOME)
-                    .addComponent(edtFOR_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                    .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(chkCLI_ATIVO))
         );
 
-        jTabbedPane1.addTab("Dados do Cliente", jPanel1);
+        jTabbedPane1.addTab("Dados do Fornecedor", jPanel1);
 
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(10, 110, 710, 160);
@@ -432,7 +444,7 @@ public class FornecedorView extends javax.swing.JFrame {
     private void btnINCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINCLUIRActionPerformed
         limpar();
         setOperacao("incluir");
-        edtFOR_NOME.setFocusable(true);
+        edtCLI_NOME.setFocusable(true);
     }//GEN-LAST:event_btnINCLUIRActionPerformed
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
@@ -440,8 +452,8 @@ public class FornecedorView extends javax.swing.JFrame {
         if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Usuário ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
-            FornecedorModel clientemodel = new FornecedorModel();
-            clientemodel.setFOR_CODIGO(Integer.parseInt(edtFOR_CODIGO.getText()));
+            ClienteModel clientemodel = new ClienteModel();
+            clientemodel.setCLI_CODIGO(Integer.parseInt(edtCLI_CODIGO.getText()));
 
             try {
                 clientecontroller.gravar(clientemodel, getOperacao());
@@ -474,30 +486,31 @@ public class FornecedorView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnANTERIORActionPerformed
 
     private void limpar() {
-        edtFOR_CODIGO.setText("0");
-        edtFOR_NOME.setText("");
+        edtCLI_CODIGO.setText("0");
+        edtCLI_NOME.setText("");
+        chkCLI_ATIVO.setSelected(false);
     }
 
-    private void mostrar(FornecedorModel cliente) {
-        edtFOR_CODIGO.setText(String.valueOf(cliente.getFOR_CODIGO()));
+    private void mostrar(ClienteModel cliente) {
+        edtCLI_CODIGO.setText(String.valueOf(cliente.getCLI_CODIGO()));
     }
 
     private String filtrar() {
         String condicao = "";
         if (!edtCONS_ID1.getText().trim().equals("")) {
-            condicao += "(FOR_CODIGO >= " + edtCONS_ID1.getText() + ")";
+            condicao += "(CLI_CODIGO >= " + edtCONS_ID1.getText() + ")";
         }
         if (!edtCONS_ID2.getText().trim().equals("")) {
             if (!condicao.isEmpty()) {
                 condicao += " AND ";
             }
-            condicao += "(FOR_CODIGO <= " + edtCONS_ID2.getText() + ")";
+            condicao += "(CLI_CODIGO <= " + edtCONS_ID2.getText() + ")";
         }
         if (!edtCONS_NOME.getText().trim().equals("")) {
             if (!condicao.isEmpty()) {
                 condicao += " AND ";
             }
-            condicao += "(FOR_NOME LIKE ('%" + edtCONS_NOME.getText() + "%'))";
+            condicao += "(CLI_NOME LIKE ('%" + edtCONS_NOME.getText() + "%'))";
         }
         if (!condicao.trim().equals("")) {
             condicao = " WHERE " + condicao;
@@ -512,7 +525,7 @@ public class FornecedorView extends javax.swing.JFrame {
         if (array.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
         } else {
-            mtb = new FornecedorTableModel(array);
+            mtb = new ClienteTableModel(array);
             tblConsulta.setModel(mtb);
             tblConsulta.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
             tblConsulta.changeSelection(0, 0, false, false);
@@ -550,7 +563,7 @@ public class FornecedorView extends javax.swing.JFrame {
         if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Usuário ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
-            FornecedorModel clientemodel = new FornecedorModel();
+            ClienteModel clientemodel = new ClienteModel();
 
             try {
                 clientecontroller.excluir(clientemodel);
@@ -563,9 +576,9 @@ public class FornecedorView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnEXCLUIRActionPerformed
 
-    private void edtFOR_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtFOR_NOMEActionPerformed
+    private void edtCLI_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_NOMEActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_edtFOR_NOMEActionPerformed
+    }//GEN-LAST:event_edtCLI_NOMEActionPerformed
 
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = clientecontroller.imprimir();
@@ -574,9 +587,13 @@ public class FornecedorView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnIMPRIMIRActionPerformed
 
-    private void edtFOR_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtFOR_CODIGOActionPerformed
+    private void chkCLI_ATIVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkCLI_ATIVOActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_edtFOR_CODIGOActionPerformed
+    }//GEN-LAST:event_chkCLI_ATIVOActionPerformed
+
+    private void edtCLI_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_CODIGOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtCLI_CODIGOActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -593,11 +610,12 @@ public class FornecedorView extends javax.swing.JFrame {
     private javax.swing.JButton btnPROXIMO;
     private javax.swing.JButton btnSAIR;
     private javax.swing.JButton btnULTIMO;
+    private javax.swing.JCheckBox chkCLI_ATIVO;
+    private javax.swing.JTextField edtCLI_CODIGO;
+    private javax.swing.JTextField edtCLI_NOME;
     private javax.swing.JTextField edtCONS_ID1;
     private javax.swing.JTextField edtCONS_ID2;
     private javax.swing.JTextField edtCONS_NOME;
-    private javax.swing.JTextField edtFOR_CODIGO;
-    private javax.swing.JTextField edtFOR_NOME;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

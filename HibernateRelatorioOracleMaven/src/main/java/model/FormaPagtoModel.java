@@ -1,19 +1,25 @@
 package model;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "FORMAPAGTO")
-public class FormaPagtoModel implements java.io.Serializable {
+public class FormaPagtoModel implements Serializable {
 
-    @Id
-    @Column(name = "FPG_CODIGO", nullable = false, precision = 10, scale = 0)
-    private int FPG_CODIGO;
+    private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name = "FPG_CODIGO", nullable = true, precision = 10, scale = 0)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Sequence")
+	@SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_FORMAPAGTO")
+	private int FPG_CODIGO;
 
     @Column(name = "FPG_NOME", nullable = false, length = 30)
     private String FPG_NOME;

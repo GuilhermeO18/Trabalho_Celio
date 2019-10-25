@@ -12,29 +12,29 @@ import javax.persistence.Table;
 public class CompraModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "CPR_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "CPR_CODIGO", nullable = true, precision = 10, scale = 0)
     private int CPR_CODIGO;
     
     private UsuarioModel USUARIO;
     
     private FornecedorModel FORNECEDOR;
 
-    @Column(name = "CPR_EMISSAO", nullable = false, length = 10)
+    @Column(name = "CPR_EMISSAO", nullable = true, length = 10)
     private String CPR_EMISSAO;
 
-    @Column(name = "CPR_VALOR", nullable = false, precision = 18, scale = 2)
+    @Column(name = "CPR_VALOR", nullable = true, precision = 18, scale = 2)
     private double CPR_VALOR;
     
-    @Column(name = "CPR_DESCONTO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "CPR_DESCONTO", nullable = true, precision = 18, scale = 2)
     private double CPR_DESCONTO;
     
-    @Column(name = "CPR_TOTAL", nullable = false, precision = 18, scale = 2)
+    @Column(name = "CPR_TOTAL", nullable = true, precision = 18, scale = 2)
     private double CPR_TOTAL;
     
-    @Column(name = "CPR_DTENTRADA", nullable = false, length = 10)
+    @Column(name = "CPR_DTENTRADA", nullable = true, length = 10)
     private String CPR_DTENTRADA;
 
-    @Column(name = "CPR_OBS", nullable = false, length = 80)
+    @Column(name = "CPR_OBS", nullable = true, length = 80)
     private String CPR_OBS;
 
 

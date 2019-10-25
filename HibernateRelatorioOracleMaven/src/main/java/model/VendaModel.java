@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class VendaModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "VDA_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "VDA_CODIGO", nullable = true, precision = 10, scale = 0)
     private int VDA_CODIGO;
     
     private UsuarioModel USUARIO;
@@ -74,19 +74,19 @@ public class VendaModel implements java.io.Serializable {
     }
     private ClienteModel CLIENTE;
     
-    @Column(name = "VDA_DATA", nullable = false, length = 10)
+    @Column(name = "VDA_DATA", nullable = true, length = 10)
     private String VDA_DATA;
     
-    @Column(name = "VDA_VALOR", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VDA_VALOR", nullable = true, precision = 18, scale = 2)
     private double VDA_VALOR;
     
-    @Column(name = "VDA_DESCONTO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VDA_DESCONTO", nullable = true, precision = 18, scale = 2)
     private double VDA_DESCONTO;
     
-    @Column(name = "VDA_TOTAL", nullable = false, precision = 18, scale = 2)
+    @Column(name = "VDA_TOTAL", nullable = true, precision = 18, scale = 2)
     private double VDA_TOTAL;
     
-    @Column(name = "VDA_OBS", nullable = false, length = 80)
+    @Column(name = "VDA_OBS", nullable = true, length = 80)
     private String VDA_OBS;
     
 

@@ -12,49 +12,49 @@ import javax.persistence.Table;
 public class ProdutoModel implements java.io.Serializable {
 
     @Id
-    @Column(name = "PRO_CODIGO", nullable = false, precision = 10, scale = 0)
+    @Column(name = "PRO_CODIGO", nullable = true, precision = 10, scale = 0)
     private int PRO_CODIGO;
 
     @Column(name = "PRO_NOME", nullable = false, length = 80)
     private String PRO_NOME;
 
-    @Column(name = "PRO_ESTOQUE", nullable = false, precision = 18, scale = 4)
+    @Column(name = "PRO_ESTOQUE", nullable = true, precision = 18, scale = 4)
     private double PRO_ESTOQUE;
 
-    @Column(name = "PRO_UNIDADE", nullable = false, length = 5)
+    @Column(name = "PRO_UNIDADE", nullable = true, length = 5)
     private String PRO_UNIDADE;
 
-    @Column(name = "PRO_PRECO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "PRO_PRECO", nullable = true, precision = 18, scale = 2)
     private double PRO_PRECO;
 
-    @Column(name = "PRO_CUSTO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "PRO_CUSTO", nullable = true, precision = 18, scale = 2)
     private double PRO_CUSTO;
 
-    @Column(name = "PRO_ATACADO", nullable = false, precision = 18, scale = 2)
+    @Column(name = "PRO_ATACADO", nullable = true, precision = 18, scale = 2)
     private double PRO_ATACADO;
 
-    @Column(name = "PRO_MIN", nullable = false, precision = 18, scale = 4)
+    @Column(name = "PRO_MIN", nullable = true, precision = 18, scale = 4)
     private double PRO_MIN;
 
-    @Column(name = "PRO_MAX", nullable = false, precision = 18, scale = 4)
+    @Column(name = "PRO_MAX", nullable = true, precision = 18, scale = 4)
     private double PRO_MAX;
 
-    @Column(name = "PRO_EMBALAGEM", nullable = false, precision = 9, scale = 0)
+    @Column(name = "PRO_EMBALAGEM", nullable = true, precision = 9, scale = 0)
     private double PRO_EMBALAGEM;
 
-    @Column(name = "PRO_PESO", nullable = false, precision = 18, scale = 4)
+    @Column(name = "PRO_PESO", nullable = true, precision = 18, scale = 4)
     private double PRO_PESO;
 
-    @Column(name = "PRO_DTCADASTRO", nullable = false, length = 10)
+    @Column(name = "PRO_DTCADASTRO", nullable = true, length = 10)
     private String PRO_DTCADASTRO;
 
-    @Column(name = "PRO_OBS", nullable = false, length = 80)
+    @Column(name = "PRO_OBS", nullable = true, length = 80)
     private String PRO_OBS;
 
     @Column(name = "PRO_ATIVO", precision = 1)
     private int PRO_ATIVO;
     
-    @Column(name = "PRO_TIPO", nullable = false, length = 1)
+    @Column(name = "PRO_TIPO", nullable = true, length = 1)
     private String PRO_TIPO;
 
     @Override

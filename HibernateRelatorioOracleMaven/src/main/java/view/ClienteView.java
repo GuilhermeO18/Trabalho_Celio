@@ -80,6 +80,7 @@ public class ClienteView extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblUSU_NOME = new javax.swing.JLabel();
         edtCLI_NOME = new javax.swing.JTextField();
+        chkCLI_ATIVO = new javax.swing.JCheckBox();
         edtCLI_CODIGO = new javax.swing.JTextField();
         lblUSU_LOGIN1 = new javax.swing.JLabel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
@@ -267,6 +268,14 @@ public class ClienteView extends javax.swing.JFrame {
             }
         });
 
+        chkCLI_ATIVO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        chkCLI_ATIVO.setText("ATIVO?");
+        chkCLI_ATIVO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkCLI_ATIVOActionPerformed(evt);
+            }
+        });
+
         edtCLI_CODIGO.setEditable(false);
         edtCLI_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         edtCLI_CODIGO.addActionListener(new java.awt.event.ActionListener() {
@@ -290,7 +299,9 @@ public class ClienteView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(chkCLI_ATIVO, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -304,7 +315,8 @@ public class ClienteView extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUSU_NOME)
                     .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(chkCLI_ATIVO))
         );
 
         jTabbedPane1.addTab("Dados do Cliente", jPanel1);
@@ -476,6 +488,7 @@ public class ClienteView extends javax.swing.JFrame {
     private void limpar() {
         edtCLI_CODIGO.setText("0");
         edtCLI_NOME.setText("");
+        chkCLI_ATIVO.setSelected(false);
     }
 
     private void mostrar(ClienteModel cliente) {
@@ -563,10 +576,6 @@ public class ClienteView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnEXCLUIRActionPerformed
 
-    private void edtCLI_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_NOMEActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_edtCLI_NOMEActionPerformed
-
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = clientecontroller.imprimir();
         if (retorno != null) {
@@ -577,6 +586,14 @@ public class ClienteView extends javax.swing.JFrame {
     private void edtCLI_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_CODIGOActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_edtCLI_CODIGOActionPerformed
+
+    private void chkCLI_ATIVOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkCLI_ATIVOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_chkCLI_ATIVOActionPerformed
+
+    private void edtCLI_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_NOMEActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtCLI_NOMEActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -593,6 +610,7 @@ public class ClienteView extends javax.swing.JFrame {
     private javax.swing.JButton btnPROXIMO;
     private javax.swing.JButton btnSAIR;
     private javax.swing.JButton btnULTIMO;
+    private javax.swing.JCheckBox chkCLI_ATIVO;
     private javax.swing.JTextField edtCLI_CODIGO;
     private javax.swing.JTextField edtCLI_NOME;
     private javax.swing.JTextField edtCONS_ID1;
