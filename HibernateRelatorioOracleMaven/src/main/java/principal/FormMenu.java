@@ -5,7 +5,6 @@ import view.UsuarioView;
 import view.VendaView;
 import view.CompraView;
 import view.FornecedorView;
-//import view.PessoaView;
 import view.ProdutoView;
 import view.FormaPagtoView;
 

@@ -436,7 +436,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
 
     private void btnPRIMEIROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPRIMEIROActionPerformed
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Formas de Pagamento Cadastrados !");
         } else {
             int selecionado = 0;
             tblConsulta.changeSelection(selecionado, 0, false, false);
@@ -451,7 +451,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
         String mensagem;
-        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Gravação desta Forma de Pagamento ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             FormaPagtoModel formaPagtomodel = new FormaPagtoModel();
@@ -462,7 +462,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
                 formaPagtocontroller.gravar(formaPagtomodel, getOperacao());
                 mensagem = "Dados Gravados com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Gravação do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Gravação da Forma de Pagamento \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -526,7 +526,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
         array = null;
         array = formaPagtocontroller.consultar(condicao);
         if (array.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Não Existem Usuários Cadastrados !");
+            JOptionPane.showMessageDialog(null, "Não Existem Formas de Pagamento Cadastrados !");
         } else {
             mtb = new FormaPagtoTableModel(array);
             tblConsulta.setModel(mtb);
@@ -563,7 +563,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
     private void btnEXCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEXCLUIRActionPerformed
         String mensagem;
         setOperacao("");
-        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão deste Usuário ?",
+        if (JOptionPane.showConfirmDialog(null, "Confirma Exclusão desta Forma de Pagamento ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 
             FormaPagtoModel formaPagtomodel = new FormaPagtoModel();
@@ -571,9 +571,9 @@ public class FormaPagtoView extends javax.swing.JFrame {
 
             try {
                 formaPagtocontroller.excluir(formaPagtomodel);
-                mensagem = "Usuário Excluído com Sucesso";
+                mensagem = "Forma de Pagamento Excluída com Sucesso";
             } catch (Exception ex) {
-                mensagem = "Erro na Exclusão do Usuário \n" + ex.getMessage();
+                mensagem = "Erro na Exclusão da Forma de Pagamento \n" + ex.getMessage();
             }
             JOptionPane.showMessageDialog(null, mensagem);
             consultar();
@@ -587,7 +587,7 @@ public class FormaPagtoView extends javax.swing.JFrame {
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = formaPagtocontroller.imprimir();
         if (retorno != null) {
-            JOptionPane.showMessageDialog(null, "Erro no Relatório de Usuários /n" + retorno.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro no Relatório de Forma de Pagamentos /n" + retorno.getMessage());
         }
     }//GEN-LAST:event_btnIMPRIMIRActionPerformed
 

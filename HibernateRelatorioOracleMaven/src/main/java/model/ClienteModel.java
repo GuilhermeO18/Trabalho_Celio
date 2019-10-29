@@ -22,7 +22,7 @@ public class ClienteModel {
     private int CLI_CODIGO;
 
     @OneToOne(cascade = CascadeType.ALL, optional = false)
-    @JoinColumn(name = "PES_CODIGO", unique = true, nullable = false)
+    @JoinColumn(name = "PES_CODIGO", unique = true, nullable = true)
     private PessoaModel pessoa;
 
     @Column(name = "CLI_LIMITECRED", precision = 18, scale = 2)

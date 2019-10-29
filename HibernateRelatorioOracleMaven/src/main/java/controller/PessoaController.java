@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 import model.PessoaModel;
 import net.sf.jasperreports.engine.JRDataSource;
-import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import util.ReportUtils;
 

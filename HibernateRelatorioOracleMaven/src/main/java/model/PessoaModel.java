@@ -13,11 +13,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "PESSOA")
 public class PessoaModel implements Serializable{
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	@Id
 	@Column(name = "PES_CODIGO", nullable = true, precision = 10, scale = 0)
