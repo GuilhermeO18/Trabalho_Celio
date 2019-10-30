@@ -78,10 +78,22 @@ public class VendaView extends javax.swing.JFrame {
         lblTitulo = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        lblUSU_NOME = new javax.swing.JLabel();
-        edtVDA_NOME = new javax.swing.JTextField();
         edtVDA_CODIGO = new javax.swing.JTextField();
         lblUSU_LOGIN1 = new javax.swing.JLabel();
+        lblUSU_LOGIN2 = new javax.swing.JLabel();
+        edtUSU_CODIGO = new javax.swing.JTextField();
+        edtCLI_CODIGO = new javax.swing.JTextField();
+        lblUSU_LOGIN3 = new javax.swing.JLabel();
+        edtVDA_DATA = new javax.swing.JTextField();
+        lblUSU_LOGIN4 = new javax.swing.JLabel();
+        edtVDA_VALOR = new javax.swing.JTextField();
+        lblUSU_LOGIN5 = new javax.swing.JLabel();
+        edtVDA_DESCONTO = new javax.swing.JTextField();
+        lblUSU_LOGIN6 = new javax.swing.JLabel();
+        edtVDA_TOTAL = new javax.swing.JTextField();
+        lblUSU_LOGIN7 = new javax.swing.JLabel();
+        lblUSU_LOGIN8 = new javax.swing.JLabel();
+        edtVDA_OBS = new javax.swing.JTextField();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -91,8 +103,6 @@ public class VendaView extends javax.swing.JFrame {
         edtCONS_ID2 = new javax.swing.JTextField();
         btnConsulta = new javax.swing.JButton();
         btnLimpar = new javax.swing.JButton();
-        lblCONS_NOME = new javax.swing.JLabel();
-        edtCONS_NOME = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblConsulta = new javax.swing.JTable();
 
@@ -253,19 +263,9 @@ public class VendaView extends javax.swing.JFrame {
 
         lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitulo.setText("Cadastro de Clientes");
+        lblTitulo.setText("Cadastro de Vendas");
         getContentPane().add(lblTitulo);
         lblTitulo.setBounds(60, 80, 590, 29);
-
-        lblUSU_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblUSU_NOME.setText("Nome");
-
-        edtVDA_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        edtVDA_NOME.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                edtVDA_NOMEActionPerformed(evt);
-            }
-        });
 
         edtVDA_CODIGO.setEditable(false);
         edtVDA_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -278,6 +278,81 @@ public class VendaView extends javax.swing.JFrame {
         lblUSU_LOGIN1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblUSU_LOGIN1.setText("Código");
 
+        lblUSU_LOGIN2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN2.setText("Usuário");
+
+        edtUSU_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtUSU_CODIGO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtUSU_CODIGOActionPerformed(evt);
+            }
+        });
+
+        edtCLI_CODIGO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtCLI_CODIGO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtCLI_CODIGOActionPerformed(evt);
+            }
+        });
+
+        lblUSU_LOGIN3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN3.setText("Cliente");
+
+        edtVDA_DATA.setEditable(false);
+        edtVDA_DATA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtVDA_DATA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtVDA_DATAActionPerformed(evt);
+            }
+        });
+
+        lblUSU_LOGIN4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN4.setText("Data");
+
+        edtVDA_VALOR.setEditable(false);
+        edtVDA_VALOR.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtVDA_VALOR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtVDA_VALORActionPerformed(evt);
+            }
+        });
+
+        lblUSU_LOGIN5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN5.setText("Valor");
+
+        edtVDA_DESCONTO.setEditable(false);
+        edtVDA_DESCONTO.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtVDA_DESCONTO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtVDA_DESCONTOActionPerformed(evt);
+            }
+        });
+
+        lblUSU_LOGIN6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN6.setText("Desconto");
+
+        edtVDA_TOTAL.setEditable(false);
+        edtVDA_TOTAL.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtVDA_TOTAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtVDA_TOTALActionPerformed(evt);
+            }
+        });
+
+        lblUSU_LOGIN7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN7.setText("Total");
+
+        lblUSU_LOGIN8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUSU_LOGIN8.setText("Obs");
+
+        edtVDA_OBS.setEditable(false);
+        edtVDA_OBS.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtVDA_OBS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edtVDA_OBSActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -285,13 +360,38 @@ public class VendaView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblUSU_NOME)
-                    .addComponent(lblUSU_LOGIN1))
+                    .addComponent(lblUSU_LOGIN5)
+                    .addComponent(lblUSU_LOGIN1)
+                    .addComponent(lblUSU_LOGIN8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(edtVDA_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edtVDA_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(39, Short.MAX_VALUE))
+                    .addComponent(edtVDA_OBS)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(edtVDA_CODIGO, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                            .addComponent(edtVDA_VALOR))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblUSU_LOGIN2)
+                            .addComponent(lblUSU_LOGIN6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(edtUSU_CODIGO, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                            .addComponent(edtVDA_DESCONTO))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblUSU_LOGIN7)
+                            .addComponent(lblUSU_LOGIN3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                            .addComponent(edtVDA_TOTAL))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblUSU_LOGIN4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(edtVDA_DATA, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 51, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -299,15 +399,31 @@ public class VendaView extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUSU_LOGIN1)
-                    .addComponent(edtVDA_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(edtVDA_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUSU_LOGIN2)
+                    .addComponent(edtUSU_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUSU_LOGIN3)
+                    .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUSU_LOGIN4)
+                    .addComponent(edtVDA_DATA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblUSU_NOME)
-                    .addComponent(edtVDA_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                    .addComponent(lblUSU_LOGIN5)
+                    .addComponent(edtVDA_VALOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUSU_LOGIN6)
+                    .addComponent(edtVDA_DESCONTO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUSU_LOGIN7)
+                    .addComponent(edtVDA_TOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblUSU_LOGIN8)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(edtVDA_OBS, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Dados do Cliente", jPanel1);
+        jTabbedPane1.addTab("Dados da Venda", jPanel1);
 
         getContentPane().add(jTabbedPane1);
         jTabbedPane1.setBounds(10, 110, 710, 160);
@@ -338,33 +454,20 @@ public class VendaView extends javax.swing.JFrame {
             }
         });
 
-        lblCONS_NOME.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        lblCONS_NOME.setText("Nome");
-
-        edtCONS_NOME.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(lblCONS_NOME)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edtCONS_NOME))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(lblCONS_ID)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edtCONS_ID1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblCodigo2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edtCONS_ID2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(77, 77, 77)
+                .addGap(37, 37, 37)
+                .addComponent(lblCONS_ID)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(edtCONS_ID1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblCodigo2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(edtCONS_ID2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 368, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -381,10 +484,7 @@ public class VendaView extends javax.swing.JFrame {
                     .addComponent(edtCONS_ID2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnConsulta))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(edtCONS_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCONS_NOME)
-                    .addComponent(btnLimpar))
+                .addComponent(btnLimpar)
                 .addContainerGap())
         );
 
@@ -432,7 +532,6 @@ public class VendaView extends javax.swing.JFrame {
     private void btnINCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINCLUIRActionPerformed
         limpar();
         setOperacao("incluir");
-        edtVDA_NOME.setFocusable(true);
     }//GEN-LAST:event_btnINCLUIRActionPerformed
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
@@ -475,7 +574,6 @@ public class VendaView extends javax.swing.JFrame {
 
     private void limpar() {
         edtVDA_CODIGO.setText("0");
-        edtVDA_NOME.setText("");
     }
 
     private void mostrar(VendaModel venda) {
@@ -492,12 +590,6 @@ public class VendaView extends javax.swing.JFrame {
                 condicao += " AND ";
             }
             condicao += "(VDA_CODIGO <= " + edtCONS_ID2.getText() + ")";
-        }
-        if (!edtCONS_NOME.getText().trim().equals("")) {
-            if (!condicao.isEmpty()) {
-                condicao += " AND ";
-            }
-            condicao += "(VDA_NOME LIKE ('%" + edtCONS_NOME.getText() + "%'))";
         }
         if (!condicao.trim().equals("")) {
             condicao = " WHERE " + condicao;
@@ -541,7 +633,6 @@ public class VendaView extends javax.swing.JFrame {
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
         edtCONS_ID1.setText("");
         edtCONS_ID2.setText("");
-        edtCONS_NOME.setText("");
     }//GEN-LAST:event_btnLimparActionPerformed
 
     private void btnEXCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEXCLUIRActionPerformed
@@ -563,10 +654,6 @@ public class VendaView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnEXCLUIRActionPerformed
 
-    private void edtVDA_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_NOMEActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_edtVDA_NOMEActionPerformed
-
     private void btnIMPRIMIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMPRIMIRActionPerformed
         Exception retorno = vendacontroller.imprimir();
         if (retorno != null) {
@@ -577,6 +664,34 @@ public class VendaView extends javax.swing.JFrame {
     private void edtVDA_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_CODIGOActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_edtVDA_CODIGOActionPerformed
+
+    private void edtUSU_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtUSU_CODIGOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtUSU_CODIGOActionPerformed
+
+    private void edtCLI_CODIGOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_CODIGOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtCLI_CODIGOActionPerformed
+
+    private void edtVDA_DATAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_DATAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtVDA_DATAActionPerformed
+
+    private void edtVDA_VALORActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_VALORActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtVDA_VALORActionPerformed
+
+    private void edtVDA_DESCONTOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_DESCONTOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtVDA_DESCONTOActionPerformed
+
+    private void edtVDA_TOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_TOTALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtVDA_TOTALActionPerformed
+
+    private void edtVDA_OBSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtVDA_OBSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edtVDA_OBSActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -593,11 +708,16 @@ public class VendaView extends javax.swing.JFrame {
     private javax.swing.JButton btnPROXIMO;
     private javax.swing.JButton btnSAIR;
     private javax.swing.JButton btnULTIMO;
+    private javax.swing.JTextField edtCLI_CODIGO;
     private javax.swing.JTextField edtCONS_ID1;
     private javax.swing.JTextField edtCONS_ID2;
-    private javax.swing.JTextField edtCONS_NOME;
+    private javax.swing.JTextField edtUSU_CODIGO;
     private javax.swing.JTextField edtVDA_CODIGO;
-    private javax.swing.JTextField edtVDA_NOME;
+    private javax.swing.JTextField edtVDA_DATA;
+    private javax.swing.JTextField edtVDA_DESCONTO;
+    private javax.swing.JTextField edtVDA_OBS;
+    private javax.swing.JTextField edtVDA_TOTAL;
+    private javax.swing.JTextField edtVDA_VALOR;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -612,11 +732,16 @@ public class VendaView extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JLabel lblCONS_ID;
-    private javax.swing.JLabel lblCONS_NOME;
     private javax.swing.JLabel lblCodigo2;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblUSU_LOGIN1;
-    private javax.swing.JLabel lblUSU_NOME;
+    private javax.swing.JLabel lblUSU_LOGIN2;
+    private javax.swing.JLabel lblUSU_LOGIN3;
+    private javax.swing.JLabel lblUSU_LOGIN4;
+    private javax.swing.JLabel lblUSU_LOGIN5;
+    private javax.swing.JLabel lblUSU_LOGIN6;
+    private javax.swing.JLabel lblUSU_LOGIN7;
+    private javax.swing.JLabel lblUSU_LOGIN8;
     private javax.swing.JTable tblConsulta;
     // End of variables declaration//GEN-END:variables
 }
