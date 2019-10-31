@@ -56,7 +56,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="740" height="71"/>
+          <AbsoluteConstraints x="20" y="0" width="690" height="71"/>
         </Constraint>
       </Constraints>
 
@@ -530,13 +530,15 @@
                               <Component id="edtPES_ENDERECO" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="edtPES_COMPLEMENTO" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblUSU_NOME4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblUSU_LOGIN7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="edtPES_UF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="lblUSU_NOME6" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="edtPES_CIDADE" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="edtPES_COMPLEMENTO" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUSU_NOME4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUSU_LOGIN7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="edtPES_UF" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="edtPES_CIDADE" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
