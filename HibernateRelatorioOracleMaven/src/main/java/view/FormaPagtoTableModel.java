@@ -7,7 +7,7 @@ import model.FormaPagtoModel;
 public class FormaPagtoTableModel extends AbstractTableModel {
 
     private ArrayList<FormaPagtoModel> linhas;
-    String[] colunas = {"ID", "Login", "Nome", "Senha", "Ativo"};
+    String[] colunas = {"ID", "Nome", "Ativo"};
 
     public FormaPagtoTableModel(ArrayList<FormaPagtoModel> arrayformaPagto) {
         linhas = arrayformaPagto;

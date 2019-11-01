@@ -7,7 +7,7 @@ import model.ProdutoModel;
 public class ProdutoTableModel extends AbstractTableModel {
 
     private ArrayList<ProdutoModel> linhas;
-    String[] colunas = {"ID", "Login", "Nome", "Senha", "Ativo"};
+    String[] colunas = {"ID", "Nome", "Ativo"};
 
     public ProdutoTableModel(ArrayList<ProdutoModel> arrayproduto) {
         linhas = arrayproduto;

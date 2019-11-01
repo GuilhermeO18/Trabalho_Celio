@@ -27,7 +27,7 @@ public class PessoaModel implements Serializable{
 	private String PES_FANTASIA;
 	
 	@Column(name = "PES_FISICA", precision = 1)
-	private int PES_FISICA;
+	private String PES_FISICA;
 	
 	@Column(name = "PES_CPFCNPJ", length = 80)
 	private String PES_CPFCNPJ;
@@ -75,17 +75,17 @@ public class PessoaModel implements Serializable{
 	private String PES_EMAIL;
 	
 	@Column(name = "PES_ATIVO", precision = 1)
-	private int PES_ATIVO;
+	private String PES_ATIVO;
 	
 	
 	public PessoaModel() {
 		super();
 	}
 
-	public PessoaModel(int pES_CODIGO, String pES_NOME, String pES_FANTASIA, int pES_FISICA, String pES_CPFCNPJ,
+	public PessoaModel(int pES_CODIGO, String pES_NOME, String pES_FANTASIA, String pES_FISICA, String pES_CPFCNPJ,
 			String pES_RGIE, String pES_CADASTRO, String pES_ENDERECO, String pES_NUMERO, String pES_COMPLEMENTO,
 			String pES_BAIRRO, String pES_CIDADE, String pES_UF, String pES_CEP, String pES_FONE1, String pES_FONE2,
-			String pES_CELULAR, String pES_SITE, String pES_EMAIL, int pES_ATIVO) {
+			String pES_CELULAR, String pES_SITE, String pES_EMAIL, String pES_ATIVO) {
 		super();
 		PES_CODIGO = pES_CODIGO;
 		PES_NOME = pES_NOME;
@@ -133,11 +133,11 @@ public class PessoaModel implements Serializable{
 		PES_FANTASIA = pES_FANTASIA;
 	}
 
-	public int getPES_FISICA() {
+	public String getPES_FISICA() {
 		return PES_FISICA;
 	}
 
-	public void setPES_FISICA(int pES_FISICA) {
+	public void setPES_FISICA(String pES_FISICA) {
 		PES_FISICA = pES_FISICA;
 	}
 
@@ -261,11 +261,11 @@ public class PessoaModel implements Serializable{
 		PES_EMAIL = pES_EMAIL;
 	}
 
-	public int getPES_ATIVO() {
+	public String getPES_ATIVO() {
 		return PES_ATIVO;
 	}
 
-	public void setPES_ATIVO(int pES_ATIVO) {
+	public void setPES_ATIVO(String pES_ATIVO) {
 		PES_ATIVO = pES_ATIVO;
 	}
 	@Override

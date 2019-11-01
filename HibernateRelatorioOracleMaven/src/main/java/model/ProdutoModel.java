@@ -45,8 +45,8 @@ public class ProdutoModel implements java.io.Serializable {
     @Column(name = "PRO_PESO", nullable = true, precision = 18, scale = 4)
     private double PRO_PESO;
 
-    @Column(name = "PRO_DTCADASTRO", nullable = true, length = 10)
-    private String PRO_DTCADASTRO;
+    @Column(name = "PRO_CADASTRO", nullable = true, length = 10)
+    private String PRO_CADASTRO;
 
     @Column(name = "PRO_OBS", nullable = true, length = 80)
     private String PRO_OBS;
@@ -54,8 +54,6 @@ public class ProdutoModel implements java.io.Serializable {
     @Column(name = "PRO_ATIVO", precision = 1)
     private int PRO_ATIVO;
     
-    @Column(name = "PRO_TIPO", nullable = true, length = 1)
-    private String PRO_TIPO;
 
     @Override
     public String toString() {
@@ -65,7 +63,7 @@ public class ProdutoModel implements java.io.Serializable {
     public ProdutoModel() {
     }
 
-    public ProdutoModel(int PRO_CODIGO, String PRO_NOME, double PRO_ESTOQUE, String PRO_UNIDADE, double PRO_PRECO, double PRO_CUSTO, double PRO_ATACADO, double PRO_MIN, double PRO_MAX, double PRO_EMBALAGEM, double PRO_PESO, String PRO_DTCADASTRO, String PRO_OBS, int PRO_ATIVO, String PRO_TIPO) {
+    public ProdutoModel(int PRO_CODIGO, String PRO_NOME, double PRO_ESTOQUE, String PRO_UNIDADE, double PRO_PRECO, double PRO_CUSTO, double PRO_ATACADO, double PRO_MIN, double PRO_MAX, double PRO_EMBALAGEM, double PRO_PESO, String PRO_CADASTRO, String PRO_OBS, int PRO_ATIVO) {
         this.PRO_CODIGO = PRO_CODIGO;
         this.PRO_NOME = PRO_NOME;
         this.PRO_ESTOQUE = PRO_ESTOQUE;
@@ -77,7 +75,7 @@ public class ProdutoModel implements java.io.Serializable {
         this.PRO_MAX = PRO_MAX;
         this.PRO_EMBALAGEM = PRO_EMBALAGEM;
         this.PRO_PESO = PRO_PESO;
-        this.PRO_DTCADASTRO = PRO_DTCADASTRO;
+        this.PRO_CADASTRO = PRO_CADASTRO;
         this.PRO_OBS = PRO_OBS ;
         this.PRO_ATIVO = PRO_ATIVO;
         
@@ -171,12 +169,12 @@ public class ProdutoModel implements java.io.Serializable {
         this.PRO_PESO = PRO_PESO;
     }
 
-    public String getPRO_DTCADASTRO() {
-        return PRO_DTCADASTRO;
+    public String getPRO_CADASTRO() {
+        return PRO_CADASTRO;
     }
 
-    public void setPRO_DTCADASTRO(String PRO_DTCADASTRO) {
-        this.PRO_DTCADASTRO = PRO_DTCADASTRO;
+    public void setPRO_CADASTRO(String PRO_CADASTRO) {
+        this.PRO_CADASTRO = PRO_CADASTRO;
     }
 
     public String getPRO_OBS() {
@@ -185,14 +183,6 @@ public class ProdutoModel implements java.io.Serializable {
 
     public void setPRO_OBS(String PRO_OBS) {
         this.PRO_OBS = PRO_OBS;
-    }
-
-    public String getPRO_TIPO() {
-        return PRO_TIPO;
-    }
-
-    public void setPRO_TIPO(String PRO_TIPO) {
-        this.PRO_TIPO = PRO_TIPO;
     }
 
     public int getPRO_ATIVO() {

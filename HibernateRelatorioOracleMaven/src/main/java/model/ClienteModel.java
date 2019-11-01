@@ -29,11 +29,11 @@ public class ClienteModel {
     private Double CLI_LIMITECRED;
 
     public ClienteModel() {
-        super();
+        
     }
 
     public ClienteModel(int cLI_CODIGO, Double cLI_LIMITECRED) {
-        super();
+        
         CLI_CODIGO = cLI_CODIGO;
         CLI_LIMITECRED = cLI_LIMITECRED;
     }

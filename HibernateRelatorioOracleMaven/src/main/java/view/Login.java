@@ -128,7 +128,7 @@ public class Login extends javax.swing.JFrame {
 
     private void BTN_ENTRARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_ENTRARActionPerformed
        
-        String sql = "count(*) from " + UsuarioModel.class.getName() + "where USU_LOGIN like '" + edtUSU_LOGIN.getText() + "' and USU_SENHA like '"+ edtUSU_SENHA.getText()+"'";
+        String sql = "from " + UsuarioModel.class.getName() + "where USU_LOGIN like '" + edtUSU_LOGIN.getText() + "' and USU_SENHA like '"+ edtUSU_SENHA.getText()+"'";
 
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t = session.beginTransaction();

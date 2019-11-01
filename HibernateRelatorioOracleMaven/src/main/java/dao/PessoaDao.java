@@ -1,5 +1,6 @@
 package dao;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import model.PessoaModel;
 import org.hibernate.Session;
@@ -12,6 +13,7 @@ public class PessoaDao implements GenericDao<PessoaModel> {
     public void incluir(PessoaModel pessoa) throws Exception {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t = session.beginTransaction();
+        Serializable ser = session.save(pessoa);
         session.save(pessoa);
         t.commit();
         session.close();

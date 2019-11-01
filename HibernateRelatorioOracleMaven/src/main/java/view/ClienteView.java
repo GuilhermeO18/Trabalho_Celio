@@ -1,6 +1,7 @@
 package view;
 
 import controller.ClienteController;
+import controller.PessoaController;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -16,6 +17,7 @@ public class ClienteView extends javax.swing.JFrame {
     private ArrayList<ClienteModel> array;
     private ClienteTableModel mtb;
     private ClienteController clientecontroller;
+    private PessoaController pessoacontroller;
 
     private String getOperacao() {
         return operacao;
@@ -31,6 +33,7 @@ public class ClienteView extends javax.swing.JFrame {
 
     public ClienteView() {
         clientecontroller = new ClienteController();
+        pessoacontroller = new PessoaController();
         this.setPreferredSize(new Dimension(750, 650));
 
         initComponents();
@@ -853,14 +856,47 @@ public class ClienteView extends javax.swing.JFrame {
         String mensagem;
         if (JOptionPane.showConfirmDialog(null, "Confirma Gravação deste Cliente ?",
                 "Confirmação", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-
-            ClienteModel clientemodel = new ClienteModel();
-            clientemodel.setCLI_CODIGO(Integer.parseInt(edtCLI_CODIGO.getText()));
+            String fisica,ativo;
+            if(chkPES_FISICA.isSelected())
+                fisica = "S";
+            else
+                fisica = "N";
+            
+            if(chkPES_ATIVO.isSelected())
+                ativo = "S";
+            else
+                ativo = "N";
             
             PessoaModel pessoamodel = new PessoaModel();
+            ClienteModel clientemodel = new ClienteModel();
             pessoamodel.setPES_CODIGO(Integer.parseInt(edtPES_CODIGO.getText()));
+            pessoamodel.setPES_NOME(edtPES_NOME.getText());
+            pessoamodel.setPES_FANTASIA(edtPES_FANTASIA.getText());
+            pessoamodel.setPES_FISICA(fisica);
+            pessoamodel.setPES_CPFCNPJ(edtPES_CPFCNPJ.getText());
+            pessoamodel.setPES_RGIE(edtPES_RGIE.getText());
+            pessoamodel.setPES_ENDERECO(edtPES_ENDERECO.getText());
+            pessoamodel.setPES_NUMERO(edtPES_NUMERO.getText());
+            pessoamodel.setPES_COMPLEMENTO(edtPES_COMPLEMENTO.getText());
+            pessoamodel.setPES_BAIRRO(edtPES_BAIRRO.getText());
+            pessoamodel.setPES_CIDADE(edtPES_CIDADE.getText());
+            pessoamodel.setPES_UF(edtPES_UF.getText());
+            pessoamodel.setPES_CEP(edtPES_CEP.getText());
+            pessoamodel.setPES_FONE1(edtPES_FONE1.getText());
+            pessoamodel.setPES_FONE2(edtPES_FONE2.getText());
+            pessoamodel.setPES_CELULAR(edtPES_CELULAR.getText());
+            pessoamodel.setPES_SITE(edtPES_SITE.getText());
+            pessoamodel.setPES_EMAIL(edtPES_EMAIL.getText());
+            pessoamodel.setPES_ATIVO(ativo);
+            
+           
+//            ClienteModel clientemodel = new ClienteModel();
+            clientemodel.setPessoa(pessoamodel);
+            clientemodel.setCLI_CODIGO(Integer.parseInt(edtCLI_CODIGO.getText()));
+            
 
             try {
+                pessoacontroller.gravar(pessoamodel, getOperacao());
                 clientecontroller.gravar(clientemodel, getOperacao());
                 mensagem = "Dados Gravados com Sucesso";
             } catch (Exception ex) {
