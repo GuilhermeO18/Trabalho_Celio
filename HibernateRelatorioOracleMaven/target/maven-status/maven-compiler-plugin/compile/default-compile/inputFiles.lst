@@ -1,6 +1,7 @@
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\controller\FornecedorController.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\view\ClienteTableModel.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\dao\CompraDao.java
+C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\relatorio\FornecedorDataSource.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\dao\FornecedorDao.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\dao\VendaProdutoDao.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\model\VendaProdutoModel.java
@@ -30,6 +31,7 @@ C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleM
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\relatorio\ProdutoDataSource.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\controller\FormaPagtoController.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\controller\VendaPagtoController.java
+C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\relatorio\ClienteDataSource.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\dao\FormaPagtoDao.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\util\ReportUtils.java
 C:\Users\guilh\Documents\Trabalho_Paulo\Trabalho_Celio\HibernateRelatorioOracleMaven\src\main\java\model\VendaModel.java
