@@ -81,7 +81,7 @@ public class ClienteView extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         lblUSU_NOME = new javax.swing.JLabel();
-        edtCLI_NOME = new javax.swing.JTextField();
+        edtCLI_LIMITECRED = new javax.swing.JTextField();
         edtCLI_CODIGO = new javax.swing.JTextField();
         lblUSU_LOGIN1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -302,10 +302,10 @@ public class ClienteView extends javax.swing.JFrame {
         lblUSU_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblUSU_NOME.setText("Nome");
 
-        edtCLI_NOME.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        edtCLI_NOME.addActionListener(new java.awt.event.ActionListener() {
+        edtCLI_LIMITECRED.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        edtCLI_LIMITECRED.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                edtCLI_NOMEActionPerformed(evt);
+                edtCLI_LIMITECREDActionPerformed(evt);
             }
         });
 
@@ -332,7 +332,7 @@ public class ClienteView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(edtCLI_CODIGO, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(edtCLI_LIMITECRED, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -345,7 +345,7 @@ public class ClienteView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUSU_NOME)
-                    .addComponent(edtCLI_NOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(edtCLI_LIMITECRED, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(202, Short.MAX_VALUE))
         );
 
@@ -849,7 +849,7 @@ public class ClienteView extends javax.swing.JFrame {
     private void btnINCLUIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnINCLUIRActionPerformed
         limpar();
         setOperacao("incluir");
-        edtCLI_NOME.setFocusable(true);
+        edtCLI_LIMITECRED.setFocusable(true);
     }//GEN-LAST:event_btnINCLUIRActionPerformed
 
     private void btnGRAVARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGRAVARActionPerformed
@@ -928,7 +928,7 @@ public class ClienteView extends javax.swing.JFrame {
 
     private void limpar() {
         edtCLI_CODIGO.setText("0");
-        edtCLI_NOME.setText("");
+        edtCLI_LIMITECRED.setText("");
         edtPES_CODIGO.setText("0");
         edtPES_NOME.setText("");
         edtPES_FANTASIA.setText("");
@@ -1047,9 +1047,9 @@ public class ClienteView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_edtCLI_CODIGOActionPerformed
 
-    private void edtCLI_NOMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_NOMEActionPerformed
+    private void edtCLI_LIMITECREDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtCLI_LIMITECREDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_edtCLI_NOMEActionPerformed
+    }//GEN-LAST:event_edtCLI_LIMITECREDActionPerformed
 
     private void edtPES_COMPLEMENTOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edtPES_COMPLEMENTOActionPerformed
         // TODO add your handling code here:
@@ -1149,7 +1149,7 @@ public class ClienteView extends javax.swing.JFrame {
     private javax.swing.JCheckBox chkPES_ATIVO;
     private javax.swing.JCheckBox chkPES_FISICA;
     private javax.swing.JTextField edtCLI_CODIGO;
-    private javax.swing.JTextField edtCLI_NOME;
+    private javax.swing.JTextField edtCLI_LIMITECRED;
     private javax.swing.JTextField edtCONS_ID1;
     private javax.swing.JTextField edtCONS_ID2;
     private javax.swing.JTextField edtCONS_NOME;

@@ -17,15 +17,15 @@ public class ClienteModel {
 
     @Id
     @Column(name = "CLI_CODIGO", nullable = true, precision = 10, scale = 0)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_Sequence")
-    @SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_CLIENTE")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_Sequence")
+    //@SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_CLIENTE")
     private int CLI_CODIGO;
 
     @OneToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "PES_CODIGO", unique = true, nullable = true)
     private PessoaModel pessoa;
 
-    @Column(name = "CLI_LIMITECRED", precision = 18, scale = 2)
+    @Column(name = "CLI_LIMITECRED", nullable = true, precision = 18, scale = 2)
     private Double CLI_LIMITECRED;
 
     public ClienteModel() {
