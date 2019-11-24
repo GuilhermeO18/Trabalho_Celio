@@ -1,5 +1,6 @@
 package model;
 
+import java.io.Serializable;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "CLIENTE")
-public class ClienteModel {
+public class ClienteModel implements Serializable {
 
     @Id
     @Column(name = "CLI_CODIGO", nullable = true, precision = 10, scale = 0)
