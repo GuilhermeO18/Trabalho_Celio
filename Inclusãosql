@@ -1,0 +1,1734 @@
+--INSERE OS VALORES QUE SÃO NOT NULL OU USADOS PELOS SELECT
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'GUILHERME',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'GUSTAVO',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'FELIPE',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'ALMEIDA',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'FELPS',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'PAULO',
+    'S',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'SANTIAGO',
+    'N',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'PEDRO',
+    'N',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'HENRIQUE',
+    'N',
+    '44927758893',
+    'MG'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'ANTÔNIO',
+    'N',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'JOSÉ',
+    'N',
+    '44927758893',
+    'MS'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'JOÃO',
+    'S',
+    '44927758893',
+    'MG'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'AUGUSTO',
+    'S',
+    '44927758893',
+    'BA'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'OLIVEIRA',
+    'S',
+    '44927758893',
+    'RJ'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'CÉLIO',
+    'S',
+    '44927758893',
+    'RS'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'CORONA',
+    'S',
+    '44927758893',
+    'RN'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'CLÉBER',
+    'N',
+    '44927758893',
+    'SP'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'JAIRO',
+    'N',
+    '44927758893',
+    'RR'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'CARLOS',
+    'N',
+    '44927758893',
+    'RO'
+);
+
+INSERT INTO PESSOA (
+    PES_NOME,
+    PES_FISICA,
+    PES_CPFCNPJ,
+    PES_UF
+) VALUES (
+    'ALEC',
+    'N',
+    '44927758893',
+    'PA'
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    1,
+    5000
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    2,
+    4900
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    3,
+    4800
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    4,
+    4700
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    5,
+    4600
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    6,
+    4500
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    7,
+    4400
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    8,
+    4300
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    9,
+    4200
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    10,
+    4100
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    11,
+    4000
+);
+
+INSERT INTO CLIENTE (
+    PES_CODIGO,
+    CLI_LIMITECRED
+) VALUES (
+    12,
+    3900
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    13,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    14,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    15,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    16,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    17,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    18,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    19,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO FORNECEDOR (
+    PES_CODIGO,
+    FOR_CONTATO
+) VALUES (
+    20,
+    'VENDAS:1498953089'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 100GB SANDISK',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 200GB SANDISK',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 300GB SANDISK',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 400GB KINGSTON',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 500GB KINGSTON',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 600GB KINGSTON',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 700GB SANDISK',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 800GB SANDISK',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 900GB SANDISK',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'SSD 1TB KINGSTON',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 100GB',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 200GB',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 300GB',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 400GB',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 500GB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 600GB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 700GB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 800GB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 900GB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'HD 1TB',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 980',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 980 TI',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1050',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1050 TI',
+    'N'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1060',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1060 TI',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1080',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 1080 TI',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 2080',
+    'S'
+);
+
+INSERT INTO PRODUTO (
+    PRO_NOME,
+    PRO_ATIVO
+) VALUES (
+    'PLACA GTX 2080 TI',
+    'S'
+);
+
+INSERT INTO USUARIO (
+    USU_NOME,
+    USU_LOGIN,
+    USU_ATIVO
+) VALUES (
+    'ADMIN',
+    'ADMIN',
+    'S'
+);
+
+INSERT INTO USUARIO (
+    USU_NOME,
+    USU_LOGIN,
+    USU_ATIVO
+) VALUES (
+    'GUILHERME',
+    'GUILHERME',
+    'S'
+);
+
+INSERT INTO USUARIO (
+    USU_NOME,
+    USU_LOGIN,
+    USU_ATIVO
+) VALUES (
+    'FELIPE',
+    'FELIPE',
+    'N'
+);
+
+INSERT INTO USUARIO (
+    USU_NOME,
+    USU_LOGIN,
+    USU_ATIVO
+) VALUES (
+    'PAULO',
+    'PAULO',
+    'S'
+);
+
+INSERT INTO USUARIO (
+    USU_NOME,
+    USU_LOGIN,
+    USU_ATIVO
+) VALUES (
+    'GUSTAVO',
+    'GUSTAVO',
+    'S'
+);
+
+INSERT INTO FORMAPAGTO ( FPG_NOME ) VALUES ( 'DINHEIRO' );
+
+INSERT INTO FORMAPAGTO ( FPG_NOME ) VALUES ( 'CHEQUE' );
+
+INSERT INTO FORMAPAGTO ( FPG_NOME ) VALUES ( 'CARTÃO DE DÉBITO' );
+
+INSERT INTO FORMAPAGTO ( FPG_NOME ) VALUES ( 'CARTÃO DE CRÉDITO - VISA' );
+
+INSERT INTO FORMAPAGTO ( FPG_NOME ) VALUES ( 'CARTÃO DE CRÉDITO - MASTER' );
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO,
+    CPR_EMISSAO
+) VALUES (
+    1,
+    1,
+    '05/09/2019'
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    2,
+    2
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO,
+    CPR_EMISSAO
+) VALUES (
+    3,
+    3,
+    '01/09/2019'
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    4,
+    4
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    5,
+    5
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    1,
+    6
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO,
+    CPR_EMISSAO
+) VALUES (
+    2,
+    7,
+    '13/05/2017'
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    3,
+    8
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    4,
+    1
+);
+
+INSERT INTO COMPRA (
+    USU_CODIGO,
+    FOR_CODIGO
+) VALUES (
+    5,
+    2
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    1,
+    '21/12/2012',
+    '10'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    1,
+    '22/12/2012',
+    '10'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    2,
+    '23/12/2012',
+    '20'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    2,
+    '24/12/2012',
+    '20'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    3,
+    3,
+    '25/12/2012',
+    '30'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    3,
+    3,
+    '27/12/2012',
+    '30'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    4,
+    4,
+    '10/01/2013',
+    '40'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    4,
+    4,
+    '12/01/2013',
+    '40'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    5,
+    5,
+    '15/01/2013',
+    '50'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    5,
+    5,
+    '17/01/2013',
+    '50'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    6,
+    '20/01/2013',
+    '60'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    6,
+    '22/01/2013',
+    '60'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    7,
+    '25/01/2013',
+    '70'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    7,
+    '27/01/2013',
+    '70'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    3,
+    8,
+    '31/01/2013',
+    '80'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    3,
+    8,
+    '02/01/2013',
+    '80'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    4,
+    9,
+    '10/02/2013',
+    '90'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    4,
+    9,
+    '12/02/2013',
+    '90'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    5,
+    10,
+    '15/02/2013',
+    '100'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    5,
+    10,
+    '17/02/2013',
+    '100'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    11,
+    '19/02/2013',
+    '110'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    1,
+    11,
+    '22/02/2013',
+    '110'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    12,
+    '25/02/2013',
+    '120'
+);
+
+INSERT INTO VENDA (
+    USU_CODIGO,
+    CLI_CODIGO,
+    VDA_DATA,
+    VDA_TOTAL
+) VALUES (
+    2,
+    12,
+    '27/02/2013',
+    '120'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    1,
+    1,
+    '1',
+    '10',
+    '5',
+    '5'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    2,
+    2,
+    '2',
+    '20',
+    '10',
+    '10'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    3,
+    3,
+    '3',
+    '30',
+    '15',
+    '15'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    4,
+    4,
+    '4',
+    '40',
+    '20',
+    '20'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    5,
+    5,
+    '5',
+    '50',
+    '25',
+    '25'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    6,
+    6,
+    '6',
+    '60',
+    '30',
+    '30'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    7,
+    7,
+    '7',
+    '70',
+    '35',
+    '35'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    8,
+    8,
+    '8',
+    '80',
+    '40',
+    '40'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    9,
+    9,
+    '9',
+    '90',
+    '45',
+    '45'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    10,
+    10,
+    '10',
+    '100',
+    '50',
+    '50'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    1,
+    11,
+    '11',
+    '110',
+    '55',
+    '55'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    2,
+    12,
+    '12',
+    '120',
+    '60',
+    '60'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    3,
+    13,
+    '13',
+    '130',
+    '65',
+    '65'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    4,
+    14,
+    '14',
+    '140',
+    '70',
+    '70'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    5,
+    15,
+    '15',
+    '150',
+    '75',
+    '75'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    6,
+    16,
+    '16',
+    '160',
+    '80',
+    '80'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    7,
+    17,
+    '17',
+    '170',
+    '85',
+    '85'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    8,
+    18,
+    '18',
+    '180',
+    '90',
+    '90'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    9,
+    19,
+    '19',
+    '190',
+    '95',
+    '95'
+);
+
+INSERT INTO COMPRA_PRODUTO (
+    CPR_CODIGO,
+    PRO_CODIGO,
+    CPR_QTDE,
+    CPR_PRECO,
+    CPR_DESCONTO,
+    CPR_TOTAL
+) VALUES (
+    10,
+    20,
+    '20',
+    '200',
+    '100',
+    '100'
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    1,
+    1
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    2,
+    2
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    3,
+    3
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    4,
+    4
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    5,
+    5
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    6,
+    6
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    7,
+    7
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    8,
+    8
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    9,
+    9
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    10,
+    10
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    1,
+    11
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    2,
+    12
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    3,
+    13
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    4,
+    14
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    5,
+    15
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    6,
+    16
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    7,
+    17
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    8,
+    18
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    9,
+    19
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    10,
+    20
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    1,
+    21
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    2,
+    22
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    3,
+    23
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    4,
+    24
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    5,
+    25
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    6,
+    26
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    7,
+    27
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    8,
+    28
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    9,
+    29
+);
+
+INSERT INTO VENDA_PRODUTO (
+    VDA_CODIGO,
+    PRO_CODIGO
+) VALUES (
+    10,
+    30
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    1,
+    1,
+    '50'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    2,
+    2,
+    '100'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    3,
+    3,
+    '150'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    4,
+    4,
+    '200'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    5,
+    5,
+    '250'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    6,
+    1,
+    '300'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    7,
+    2,
+    '350'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    8,
+    3,
+    '400'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    9,
+    1,
+    '450'
+);
+
+INSERT INTO VENDA_PAGTO (
+    VDA_CODIGO,
+    FPG_CODIGO,
+    VDP_VALOR
+) VALUES (
+    24,
+    1,
+    '500'
+);
